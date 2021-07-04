@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Comuns página</title>
+</head>
+<body>
+    <h1>Página de Usuários Comuns</h1>
+    <h2>Saldoooooooooo</h2>
+    <div><p> Seu saldo é<span th:text= "${comum.saldo}"></span></p></div>
+    <h2>Insira dinheiro</h2>
+    <form action="aumentaSaldo" method="get">
+        <label>Insira quanto saldo você deseja aumentar</label><input type="text" name="saldoAumento">
+        <button type="submit">Salvar</button>
+    </form>
+    <h2>Mandar dinheiro para lojista</h2>
+    <form>
+        <label>Insira quanto dinheiro você deseja enviar</label><input type="text" name="saldoEnviado">
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html >
